@@ -1,4 +1,4 @@
-# RackSessionRedisStore [![Build Status](https://travis-ci.org/SpringMT/.png)](https://travis-ci.org/SpringMT/)
+# RackSessionRedisStore [![Build Status](https://travis-ci.org/SpringMT/rack_session_redis_store.png)](https://travis-ci.org/SpringMT/rack_session_redis_store)
 
 ## Installation
 
