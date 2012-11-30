@@ -1,5 +1,24 @@
 # RackSessionRedisStore [![Build Status](https://travis-ci.org/SpringMT/rack_session_redis_store.png)](https://travis-ci.org/SpringMT/rack_session_redis_store)
 
+RackSessionRedisStore is to manage session using redis.
+
+## Usage
+For Rails.
+
+In config/initializers/session_store.rb
+
+~~~
+# Be sure to restart your server when you modify this file.
+require 'session/redis'
+Cowork::Application.config.session_store RackSessionRedisStore::Session, key: '_session', host: '127.0.0.1'
+
+# Use the database for sessions instead of the cookie-based default,
+# which shouldn't be used to store highly confidential information
+# (create the session table with "rails generate session_migration")
+# Cowork::Application.config.session_store :active_record_store
+~~~
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -13,8 +32,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install rack_session_redis_store
-
-## Usage
 
 ## Contributing
 
